@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color:#1DB954;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    color:rgb(209, 206, 202);
+    font-size: 20px;
+}
+nav ul li{
+    padding: 0 2vh;
+    list-style: none;
+}
+.brand img{
+    width: 6.7vh;
+    padding: 0 0.9vh;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.brand:hover{
+    color: white;
+}
+.home{
+    cursor: pointer;
+}
+.home:hover{
+    color: white;
+
+}
+.about{
+    cursor: pointer;
+}
+.about:hover{
+    color: white;
+
+}
+
+
+#search{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 3vh;
+    margin-left: 3vw;
+    /* margin-right: 2px; */
+}
+.search_icon{
+    margin-left: -17px;
+    margin-top: 5px;
+    cursor: pointer;
+    /* height: 10px; */
+}
+
+.singup{
+    margin-left: 36vw;
+    cursor: pointer;
+
+}
+.singup:hover{
+    color: white;
+}
+
+.login{
+    height: 5vh;
+    width: 4.8vw;
+    border-radius: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+.login:hover{
+    width: 5.2vw;
+    margin-left: -2px;
+    height:5.4vh ;
+    font-size:18px ;
+}
+.container{
+    min-height: 58vh;
+    /* background-color:black; */
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bg1.jpg');
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons img{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 10px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color:#1DB954;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp img{
+    cursor: pointer;
+    height:20px ;
+    width:20px ;
+    /* padding-left: 10px; */
+}
+
+.songInfo{
+    display: flex;
+     position: absolute;
+     left: 11vw;
+    font-family: 'Varela Round', sans-serif;
+}
+#masterSongName{
+    margin-top: 24px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+
+.songInfo img{
+    border-radius: 34px;
+    border: 2px solid white;
+}
+#coverimg{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    animation: rotation 8s infinite linear;
+    margin-top: 10px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+h1{
+    padding-bottom: 35px;
+}
+.songName{
+    color: white;
+    font-weight: bold;
+}
+.timestamp{
+    color: white;
+    font-weight: bold;
+}

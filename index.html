@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Relaxing Music therapy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href=""><img src="img/logo.png" alt="Spotify"></a> Spotify</li>
+            <li class="home">Home</li>
+            <li class="about">About</li>
+            <li><input type="text" name="Search" id="search" placeholder="Search"></li>
+            <li class="search_icon"><img src="img/search.png" alt=""></li>
+            <li class="singup">Sing up</li>
+            <li><button class="login">login</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - For BGMI Montages</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">2.52<img src="img/play.png" alt="" class = "songItemPlay"id="0"></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">3.24<img src="img/play.png" alt="" class = "songItemPlay"id="1"></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">3.27<img src="img/play.png" alt="" class = "songItemPlay"id="2"></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">3.48<img src="img/play.png" alt="" class = "songItemPlay"id="3"></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">3.44<img src="img/play.png" alt="" class = "songItemPlay"id="4"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <img src="img/back.png" alt="back"id="previous">
+            <img src="img/play.png" alt="play"id="masterPlay">
+            <img src="img/forward.png" alt="forward"id="next">
+        </div>
+        <div class="songInfo">
+            <div class="coverimg"><img src="" width="42px" alt="" id="coverimg"></div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="covername"id="masterSongName"></div>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
