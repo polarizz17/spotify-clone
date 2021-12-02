@@ -43,7 +43,7 @@ masterPlay.addEventListener('click', ()=>{
         audioElement.play();
         masterPlay.src = 'img/pause.png'; 
         masterSongName.innerText = songs[songIndex].songName;
-        cover.src =`/covers/${songIndex+1}.jpg`;
+        cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
         document.getElementById('masterSongName').style.opacity = 1;
         cover.style.opacity = 1;
     }
@@ -76,7 +76,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.src = 'img/pause.png';
         audioElement.src = `songs/${songIndex+1}.mp3`;
-        cover.src =`/covers/${songIndex+1}.jpg`;
+        cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -96,7 +96,7 @@ document.getElementById('next').addEventListener('click', ()=>{
         songIndex += 1;
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
-    cover.src =`/covers/${songIndex+1}.jpg`;
+    cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -114,7 +114,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
         songIndex -= 1;
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
-    cover.src =`/covers/${songIndex+1}.jpg`;
+    cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -130,7 +130,7 @@ audioElement.addEventListener('ended', ()=>{
         songIndex += 1;
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
-    cover.src =`/covers/${songIndex+1}.jpg`;
+    cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
