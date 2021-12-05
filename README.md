@@ -7,4 +7,4 @@ you can play pause or change the songs.
 
 ## Screenshots
 
-![App Screenshot](img/Screenshot (34).png)
+![](img/Screenshot (34).png)
