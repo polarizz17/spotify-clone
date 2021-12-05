@@ -7,9 +7,13 @@ you can play pause or change the songs.
 
 ## Screenshots
 
+This is the User inter face of the webpage.
+
 <img src="img/Screenshot (34).png">
 
 
 ## Functios
+
+in this gif you can see all the functions.
 
 <img src="img/20211205_143556.gif">
