@@ -7,4 +7,4 @@ you can play pause or change the songs.
 
 ## Screenshots
 
-![](img/Screenshot (34).png)
+<img src="img/Screenshot (34).png">
