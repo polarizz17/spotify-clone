@@ -8,3 +8,8 @@ you can play pause or change the songs.
 ## Screenshots
 
 <img src="img/Screenshot (34).png">
+
+
+## Functios
+
+<img src="img/20211205_143556.gif">
