@@ -46,11 +46,14 @@ masterPlay.addEventListener('click', ()=>{
         cover.src =`C:/Users/polar/Desktop/HTML AND CSS/Projects/Spotify_Clone/covers/${songIndex+1}.jpg`;
         document.getElementById('masterSongName').style.opacity = 1;
         cover.style.opacity = 1;
+        //cover img rotation
+        cover.style.animationName = "rotation";
     }
     else{
         audioElement.pause();
         masterPlay.src = 'img/play.png';
         makeAllPlays();
+        cover.style.animationName ="none";
     }
 })
 
@@ -86,7 +89,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     })
 })
 
-// pevious and next
+//  next
 
 document.getElementById('next').addEventListener('click', ()=>{
     if(songIndex>=4){
@@ -101,14 +104,15 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
     masterPlay.src = 'img/pause.png';
+    cover.style.animationName = "rotation";
 
 })
 
-//  next
+//pevious
 
 document.getElementById('previous').addEventListener('click', ()=>{
     if(songIndex<=0){
-        songIndex = 4
+        songIndex = 4;
     }
     else{
         songIndex -= 1;
@@ -119,6 +123,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
     masterPlay.src = 'img/pause.png';
+    cover.style.animationName = "rotation";
 })
 
 //auto next
@@ -135,9 +140,11 @@ audioElement.addEventListener('ended', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
     masterPlay.src = 'img/pause.png';
+    cover.style.animationName = "rotation";
 
 })
 
+//cover img rotation
 
 
 
